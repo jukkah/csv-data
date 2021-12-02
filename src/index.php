@@ -1,10 +1,13 @@
 <?php
 /**
  * Plugin Name: CSV Data
- * Description: Shortcode for fetching data from csv file/url
- * Version: 0.1.2
+ * Plugin URI: https://github.com/jukkah/csv-data
+ * Description: Shortcode for fetching data from csv file/url.
+ * Version: 1.0.0
  * Author: Jukka Hyytiälä
  * Author URI: https://jukkahyytiala.fi
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  */
 
 // Usage: [csv_data url="https://example.com/data.csv" column=1 row=1 cache=3600]

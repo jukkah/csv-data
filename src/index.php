@@ -2,7 +2,7 @@
 /**
  * Plugin Name: CSV Data
  * Description: Shortcode for fetching data from csv file/url
- * Version: 0.1.0
+ * Version: 0.1.2
  * Author: Jukka Hyytiälä
  * Author URI: https://jukkahyytiala.fi
  */
@@ -20,7 +20,7 @@ add_shortcode('csv_data', function ($attr) {
     'cache' => 0,
   ], $attr);
 
-  $url = $settings['url'];
+  $url = html_entity_decode($settings['url']);
   $column = $settings['column'];
   $row = $settings['row'];
   $cache = $settings['cache'];

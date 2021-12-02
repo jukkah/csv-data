@@ -31,4 +31,4 @@ zip: ## Create a zip file from src directory
 
 sftp: ## Deploy the content of src directory via SFTP
 	@echo "Deploying via SFTP"
-	echo "rm ${NAME}/*\nput -r src/* ${NAME}\nexit\n" | sshpass -p ${SFTP_PASSWORD} sftp -P ${SFTP_PORT} ${SFTP_URL}
+	echo "mkdir ${NAME}\nrm ${NAME}/*\nput -r src/* ${NAME}\nexit\n" | sshpass -p ${SFTP_PASSWORD} sftp -P ${SFTP_PORT} ${SFTP_URL}
